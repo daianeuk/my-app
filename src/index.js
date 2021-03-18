@@ -2,22 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+function exeCliq(){
+  alert ('ClickedSquare');
+}
+
+function Square(){
+  return(
+    <button className='square' onClick={exeCliq}></button>
+  )
+}
 function Board(){
   return (<div>
     <div className='board-row'>
-      <button className='square'></button>
-      <button className='square'></button>
-      <button className='square'></button>
+      <Square/>
+      <Square/>
+      <Square/>
     </div>
     <div className='board-row'>
-      <button className='square'></button>
-      <button className='square'></button>
-      <button className='square'></button>
+      <Square/>
+      <Square/>
+      <Square/>
     </div>
     <div className='board-row'>
-      <button className='square'></button>
-      <button className='square'></button>
-      <button className='square'></button>
+      <Square/>
+      <Square/>
+      <Square/>
     </div>
     <div>
       Game Info
