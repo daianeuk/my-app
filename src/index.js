@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+let move = 'X';
+
 function exeCliq(){
+  move = 'O';
   alert ('ClickedSquare');
 }
 
 function Square(){
   return(
-    <button className='square' onClick={exeCliq}></button>
+    <button className='square' onClick={exeCliq}>
+      {move}
+    </button>
+
   )
 }
 function Board(){
